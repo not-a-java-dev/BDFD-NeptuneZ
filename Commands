@@ -17,6 +17,6 @@ $color[#9999ff]
 $title[:ping_pong:Pong!]
 $description[Took $executionTimems to execute the command!]
 $endif
-$if[$message[1]==]
-Please insert a command.
+$if[$message[1]==fooy]
+fooy
 $endif
