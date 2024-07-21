@@ -1,4 +1,3 @@
-$color[#9999ff]
 $if[$message[1]==echo]
 $nomention
 $replaceText[$message;$message[1];;-1]
@@ -13,6 +12,7 @@ You rolled a **$random[1;6]**!
 $endif
 $if[$message[1]==ping]
 $nomention
+$color[#9999ff]
 $title[:ping_pong:Pong!]
 $description[Took $executionTimems to execute the command!]
 $endif
