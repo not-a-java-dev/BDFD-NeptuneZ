@@ -1,4 +1,4 @@
-$color[#9999ff]
+8$color[#9999ff]
 $if[$message[1]==echo]
 $nomention
 $replaceText[$message;$message[1];;-1]
@@ -18,5 +18,5 @@ $description[Took $executionTimems to execute the command!]
 $endif
 $if[$message[1]==]
 $nomention
-Please insert a **command.**
+Please insert a command.
 $endif
