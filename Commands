@@ -20,3 +20,13 @@ $endif
 $if[$message[1]==fooy]
 fooy
 $endif
+$if[$message[1]==warn]
+$onlyPerms[managemessages;:x:Can not run this command, requires ``managemessages`` permission.]
+$dm[$message[2]]
+$title[You got warned.]
+$description[You got warned in $serverName[$guildID]
+Reason: $replaceText[$message;$message[1] $message[2];;1]
+$date]
+$color[#ff4444]
+$footer[Warned by <@$authorID>]
+$endif
