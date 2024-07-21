@@ -45,6 +45,5 @@ $kick[$message[2];$replaceText[$message;$message[1] $message[2];;1]]
 $endif
 
 $if[$message[1]==uptime]
-$nomention
-The Bot Has Been Running For $uptime
+The bot has been running for **"$uptime"**!
 $endif
