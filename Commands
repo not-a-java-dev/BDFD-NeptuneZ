@@ -1,8 +1,10 @@
+$color[#9999ff]
 $if[$message[1]==echo]
 $nomention
 $replaceText[$message;$message[1];;-1]
 $endif
 $if[$message[1]==8ball]
+$nomention
 **"$replaceText[$message;$message[1];;-1]"**
 $randomText[Yes;No;Probably;Never;Ask again later;i dont know; i cant answer that].
 $endif
@@ -10,6 +12,7 @@ $if[$message[1]==dice]
 You rolled a **$random[1;6]**!
 $endif
 $if[$message[1]==ping]
+$nomention
 $title[:ping_pong:Pong!]
 $description[Took $executionTimems to execute the command!]
 $endif
