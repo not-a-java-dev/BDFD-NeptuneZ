@@ -2,7 +2,12 @@ $if[$message[1]==echo]
 $nomention
 $replaceText[$message;$message[1];;-1]
 $endif
+
 $if[$message[1]==8ball]
 **"$replaceText[$message;$message[1];;-1]"**
 $randomText[Yes;No;Probably;Never;Ask again later;i dont know; i cant answer that].
+$endif
+
+$if[$message[1]==dice]
+You rolled a **$random[1;6]**!
 $endif
