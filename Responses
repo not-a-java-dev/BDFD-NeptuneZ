@@ -24,6 +24,7 @@ $endif
 $if[$message[1]==warn]
 $nomention
 $onlyPerms[managemessages;:x:Can not run this command, requires ``managemessages`` permission.]
+$if[$message[2]!=]
 $dm[$message[2]]
 <@$message[2]>
 $title[You got warned.]
@@ -33,7 +34,7 @@ $description[You got warned in **$serverName[$guildID]**
 $color[#ff4444]
 $footer[Warned by $username[$authorID]]
 $endif
-
+$endif
 $if[$message[1]==kick]
 $nomention
 $if[$checkUserPerms[$botID;managemessages]==true]
