@@ -9,3 +9,7 @@ $endif
 $if[$message[1]==dice]
 You rolled a **$random[1;6]**!
 $endif
+$if[$message[1]==ping]
+$title[:ping_pong:Pong!]
+$description[Took $executionTimems to execute the command!]
+$endif
