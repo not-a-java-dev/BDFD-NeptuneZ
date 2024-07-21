@@ -1,4 +1,4 @@
 $if[$message[1]==echo]
 $nomention
-$replace[$message;$message[1];;-1]
+$replaceText[$message;$message[1];;-1]
 $endif
