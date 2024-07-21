@@ -16,3 +16,7 @@ $nomention
 $title[:ping_pong:Pong!]
 $description[Took $executionTimems to execute the command!]
 $endif
+$if[$message[1]==]
+$nomention
+Please insert a **command.**
+$endif
