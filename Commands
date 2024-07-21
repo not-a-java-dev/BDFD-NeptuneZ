@@ -1,6 +1,6 @@
 $if[$message[1]==echo]
 $nomention
-$replaceText[$message;$message[1];;-1]
+$replaceText[$message;$message[1];;1]
 $endif
 $if[$message[1]==8ball]
 $nomention
