@@ -6,4 +6,3 @@ $if[$message[1]==8ball]
 **"$replaceText[$message;$message[1];;-1]"**
 $randomText[Yes;No;Probably;Never;Ask again later;i dont know; i cant answer that].
 $endif
-beep
