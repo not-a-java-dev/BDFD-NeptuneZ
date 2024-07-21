@@ -49,5 +49,6 @@ The bot has been running for **$uptime**!
 $endif
 
 $if[$message[1]==glungirating]
+$nomention
 I rate <@$authorID> $random[0;10] glungi out of 10!
 $endif
