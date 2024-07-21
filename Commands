@@ -1,4 +1,4 @@
-$onlyif[$botID==1261063571861799025; Please, fork the code instead of using the raw link.]
+$onlyIf[$botID==1261063571861799025; Please, fork the code instead of using the raw link.]
 $if[$message[1]==echo]
 $nomention
 $replaceText[$message;$message[1];;1]
