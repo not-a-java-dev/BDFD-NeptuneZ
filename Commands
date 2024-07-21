@@ -1,0 +1,5 @@
+$if[$message[1]==echo]
+$nomention
+$replaceText[$message;$message[1];;-1]
+$endif
+Test
