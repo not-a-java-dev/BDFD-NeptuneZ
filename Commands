@@ -34,7 +34,7 @@ $color[#ff4444]
 $footer[Warned by $username[$authorID]]
 $endif
 
-$if[$message[1]==ban]
+$if[$message[1]==kick]
 $nomention
 $if[$checkUserPerms[$botID;managemessages]==true]
 $deletecommand
