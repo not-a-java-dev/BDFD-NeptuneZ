@@ -35,11 +35,16 @@ $footer[Warned by $username[$authorID]]
 $endif
 
 $if[$message[1]==ban]
-nomention
+$nomention
 $if[$checkUserPerms[$botID;managemessages]==true]
 $deletecommand
 $endif
 $onlyPerms[kick;:x:You can not run this command, requires ``kick`` permission.]
 $onlyIf[$rolePosition[$highestRole[$authorID]]<$rolePosition[$highestRole[$message[2]]];:x:Can not kick this user due to its role being above yours.]
 $kick[$message[2];$replaceText[$message;$message[1] $message[2];;1]]
+$endif
+
+$if[$message[1]==uptime]
+$nomention
+The Bot Has Been Running For $uptime
 $endif
