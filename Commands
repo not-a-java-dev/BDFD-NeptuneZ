@@ -40,6 +40,6 @@ $if[$checkUserPerms[$botID;managemessages]==true]
 $deletecommand
 $endif
 $onlyPerms[kick;:x:You can not run this command, requires ``kick`` permission.]
-$onlyIf[$rolePosition[$highestRole[$authorID]]<$rolePosition[$highestRole[$message[1]]];:x:Can not kick this user due to its role being above yours.]
-$kick[$message[1];$replaceText[$message;$message[1] $message[2];;1]]
+$onlyIf[$rolePosition[$highestRole[$authorID]]<$rolePosition[$highestRole[$message[2]]];:x:Can not kick this user due to its role being above yours.]
+$kick[$message[2];$replaceText[$message;$message[1] $message[2];;1]]
 $endif
