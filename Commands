@@ -31,5 +31,5 @@ $description[You got warned in **$serverName[$guildID]**
 **Reason:**$replaceText[$message;$message[1] $message[2];;1]
 **Date:** $date]
 $color[#ff4444]
-$footer[Warned by <@$authorID>]
+$footer[Warned by $username[$authorID]]
 $endif
